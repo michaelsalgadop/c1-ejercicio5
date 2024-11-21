@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+.contenedor-bandas,
+.banda {
+  display: flex;
+  align-items: center;
+}
+.contenedor-bandas {
+  height: 100vh;
+}
+.banda,
+.banda .texto,
+.banda:hover + .banda {
+  transition: 500ms;
+}
+.banda {
+  flex: 1;
+  justify-content: center;
+  height: 100%;
+}
+.banda .texto {
+  display: inline-block;
+}
+.banda:nth-of-type(1) {
+  background-color: #00ffff;
+}
+.banda:nth-of-type(2) {
+  background-color: #00dddd;
+}
+.banda:nth-of-type(3) {
+  background-color: #00bbbb;
+}
+.banda:nth-of-type(4) {
+  background-color: #009999;
+}
+.banda:nth-of-type(5) {
+  background-color: #007777;
+}
+.banda:hover {
+  background-color: #000;
+  color: #fff;
+}
+.banda:hover + .banda {
+  background-color: #fff;
+  color: #000;
+}
+.banda:hover .texto {
+  transform: rotate(360deg);
+}
